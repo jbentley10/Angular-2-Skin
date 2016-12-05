@@ -12,12 +12,6 @@ header {
     transition: .5s;
   }
 
-  h3 {
-    color: #b60000;
-    margin: 1em 0px;
-    font-size: 2em;
-  }
-
   ul {
     padding: 5em 4em;
   }
@@ -32,21 +26,6 @@ header {
 
   form {
     font-size: 12px;
-  }
-
-  // Form field in header
-  .col-md-5 {
-    background-color: #fff;
-    padding: 4em;
-    margin: 6em 0;
-    transition: 1s;
-    animation-delay: 1.25s;
-
-    .checkbox input[type=checkbox] {
-      margin-right: 1em;
-      margin-left: 0;
-      position: relative;
-    }
   }
 
   // Left side of header, the title and bullets
