@@ -49,4 +49,13 @@ header {
       }
     }
   }
+
+  // Form field in header
+  .col-md-5 {
+    background-color: #fff;
+    padding: 4em;
+    margin: 6em 0;
+    transition: 1s;
+    animation-delay: 1.25s;
+  }
 }
