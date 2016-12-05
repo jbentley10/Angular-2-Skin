@@ -1,0 +1,33 @@
+// Second section (second CTA) styling
+.second_section {
+  background-color: #333;
+  color: #fff;
+
+  strong {
+    color: #b3b3b3;
+    font-size: 1.5em;
+  }
+
+  button.btn {
+    margin: 2em;
+  }
+
+  .col-md-6 {
+    img {
+      width: 100%;
+      margin: 3em 0;
+    }
+
+    &:last-of-type {
+      text-align: right;
+      padding: 5em;
+    }
+  }
+
+  &:before {
+    content: "";
+    margin: 0 auto;
+    border: 40px solid;
+    border-color: #fff transparent transparent;
+  }
+} //.second_section
