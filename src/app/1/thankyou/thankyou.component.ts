@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ThankMainComponent } from './thank-main/thank-main.component';
 
 @Component({
   selector: 'app-thankyou',
