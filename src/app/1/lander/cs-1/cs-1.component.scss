@@ -1,0 +1,43 @@
+// After the header / form field section
+.first_section {
+  text-align: center;
+  margin: 2.5em 0;
+
+  ul, li {
+    display: inline-block;
+  }
+
+  li {
+    &:first-of-type {
+      animation-delay: 1s;
+    }
+
+    &:nth-child(2) {
+      animation-delay: 1.5s;
+    }
+
+    &:last-of-type {
+      animation-delay: 2s;
+    }
+  }
+
+  i {
+    padding: 1em;
+    vertical-align: middle;
+    font-size: 6em;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+
+  &:before {
+    content: "";
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border: 40px solid;
+    border-color: #131313 transparent transparent;
+  }
+} //.first_section
