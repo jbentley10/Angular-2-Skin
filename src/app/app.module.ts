@@ -13,6 +13,8 @@ import { MainFormComponent } from './1/lander/main-form/main-form.component';
 import { Cs1Component } from './1/lander/cs-1/cs-1.component';
 import { Cs2Component } from './1/lander/cs-2/cs-2.component';
 import { CheckFormComponent } from './1/checkout/check-form/check-form.component';
+import { CheckMainComponent } from './1/checkout/check-main/check-main.component';
+import { ThankMainComponent } from './1/thankyou/thank-main/thank-main.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { CheckFormComponent } from './1/checkout/check-form/check-form.component
     MainFormComponent,
     Cs1Component,
     Cs2Component,
-    CheckFormComponent
+    CheckFormComponent,
+    CheckMainComponent,
+    ThankMainComponent
   ],
   imports: [
     BrowserModule,
