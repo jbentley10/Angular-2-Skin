@@ -1,0 +1,71 @@
+header {
+  background: url('../img/section-1-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  h1, li {
+    color: #fff;
+    list-style-type: disc;
+    padding: 1.25em;
+    transition: .5s;
+  }
+
+  h3 {
+    color: #b60000;
+    margin: 1em 0px;
+    font-size: 2em;
+  }
+
+  ul {
+    padding: 5em 4em;
+  }
+
+  li {
+    font-size: 1.5em;
+  }
+
+  input, select {
+    margin: 1em 0;
+  }
+
+  form {
+    font-size: 12px;
+  }
+
+  // Form field in header
+  .col-md-5 {
+    background-color: #fff;
+    padding: 4em;
+    margin: 6em 0;
+    transition: 1s;
+    animation-delay: 1.25s;
+
+    .checkbox input[type=checkbox] {
+      margin-right: 1em;
+      margin-left: 0;
+      position: relative;
+    }
+  }
+
+  // Left side of header, the title and bullets
+  .col-md-7 {
+    padding: 6em 0;
+
+    li {
+      animation-delay: .3s;
+      &:first-of-type {
+        animation-delay: .15s;
+      }
+      &:last-of-type {
+        animation-delay: .45s;
+      }
+    }
+    img {
+      animation-delay: .75s;
+
+      &:first-of-type {
+        animation-delay: .01s;
+      }
+    }
+  }
+}
