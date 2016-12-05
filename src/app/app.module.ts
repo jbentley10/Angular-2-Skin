@@ -15,6 +15,7 @@ import { Cs2Component } from './1/lander/cs-2/cs-2.component';
 import { CheckFormComponent } from './1/checkout/check-form/check-form.component';
 import { CheckMainComponent } from './1/checkout/check-main/check-main.component';
 import { ThankMainComponent } from './1/thankyou/thank-main/thank-main.component';
+import { routing } from './app.routing';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ThankMainComponent } from './1/thankyou/thank-main/thank-main.component
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
