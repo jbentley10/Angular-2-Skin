@@ -1,5 +1,7 @@
+$assetPath : "../../../assets/images/";
+
 header {
-  background: url('../img/section-1-bg.png');
+  background: url($assetPath + 'section-1-bg.png');
   background-size: cover;
   background-repeat: no-repeat;
 
