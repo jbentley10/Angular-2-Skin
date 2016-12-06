@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CheckoutComponent } from '../checkout.component';
 
 @Component({
   selector: 'app-check-main',
