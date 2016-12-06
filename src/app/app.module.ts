@@ -20,6 +20,7 @@ import { routing } from './app.routing';
 
 import { CheckHeaderComponent } from './1/checkout/check-header/check-header.component';
 import { GlobalDirective } from './global.directive';
+import { TermsComponent } from './1/terms/terms.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { GlobalDirective } from './global.directive';
     CheckMainComponent,
     ThankMainComponent,
     CheckHeaderComponent,
-    GlobalDirective
+    GlobalDirective,
+    TermsComponent
   ],
   imports: [
     BrowserModule,
