@@ -1,8 +1,7 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-
 import { AppComponent } from './app.component';
 import { LanderComponent } from './1/lander/lander.component';
 import { CheckoutComponent } from './1/checkout/checkout.component';
@@ -21,6 +20,7 @@ import { routing } from './app.routing';
 import { CheckHeaderComponent } from './1/checkout/check-header/check-header.component';
 import { GlobalDirective } from './global.directive';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,6 +37,7 @@ import { GlobalDirective } from './global.directive';
     ThankMainComponent,
     CheckHeaderComponent,
     GlobalDirective
+
   ],
   imports: [
     BrowserModule,
@@ -44,7 +45,11 @@ import { GlobalDirective } from './global.directive';
     HttpModule,
     routing
   ],
-  providers: [],
+  providers: [GlobalDirective, Title
+
+  ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+ }

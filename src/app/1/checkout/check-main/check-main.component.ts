@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CheckoutComponent } from '../checkout.component';
+import { GlobalDirective } from '../../../global.directive';
 
 @Component({
   selector: 'app-check-main',
@@ -8,7 +9,7 @@ import { CheckoutComponent } from '../checkout.component';
 })
 export class CheckMainComponent implements OnInit {
 
-  constructor() { }
+  constructor (public echos: GlobalDirective) {}
 
   ngOnInit() {
   }

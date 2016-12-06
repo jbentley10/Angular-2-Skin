@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GlobalDirective } from '../../../global.directive';
 
 @Component({
   selector: 'app-main-form',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainFormComponent implements OnInit {
 
-  constructor() { }
+  constructor (public echos: GlobalDirective) {}
 
   ngOnInit() {
   }

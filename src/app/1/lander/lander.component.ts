@@ -4,6 +4,7 @@ import { MainFormComponent } from './main-form/main-form.component';
 import { Cs1Component } from './cs-1/cs-1.component';
 import { Cs2Component } from './cs-2/cs-2.component';
 import { FooterComponent } from '../footer/footer.component';
+import { GlobalDirective } from '../../global.directive';
 
 @Component({
   selector: 'app-lander',
@@ -12,7 +13,7 @@ import { FooterComponent } from '../footer/footer.component';
 })
 export class LanderComponent implements OnInit {
 
-  constructor() { }
+  constructor (public echos: GlobalDirective) {}
 
   ngOnInit() {
   }
