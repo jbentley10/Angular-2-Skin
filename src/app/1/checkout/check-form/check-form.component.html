@@ -1,9 +1,9 @@
 <!-- Form start -->
-<form id="index-form" method="post" action="thankyou.php">
+<form id="index-form" #f2="ngForm" (ngSubmit)="onSubmit(f2.value)">
   <div class="checkout-form-image cards-image"><img class="form-cc" src="../../../../assets/images/cc.png" alt="Credit cards"></div>
 
   <div id="billshipcheck" class="billshipsame">
-    <input class="checkbox" type="checkbox" style="display:inline;" class="form-control" name="billship" checked>
+    <input class="checkbox" type="checkbox" style="display:inline;" id="billShipSame" class="form-control" name="billship" checked>
     <label for='billShipSame'>
           Billing Address same as Shipping
         </label>
