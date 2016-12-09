@@ -3,7 +3,6 @@ import { Title }     from '@angular/platform-browser';
 import { LanderComponent } from './1/lander/lander.component';
 import { FooterComponent } from './1/footer/footer.component';
 import { GlobalDirective } from './global.directive';
-//import '../styles.scss';
 
 @Component({
   selector: 'app-root',
