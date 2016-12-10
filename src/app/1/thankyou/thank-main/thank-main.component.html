@@ -3,8 +3,13 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
+
+        <!-- Use a test message -->
         <em>{{ testMessage }}</em>
-        <h1>{{ anotherTest }}</h1>
+
+        <!-- Try and get what the form input is -->
+        <p>The form displayed this: {{ form.fName }}</p>
+
         <strong>Thank you <span [innerText]="form.fName"></span> for your purchase!</strong>
         <p>
           We hope you enjoy the benefits of <span id="product-name" [innerText]="echos.productName"></span><br /> Your order is scheduled to arrive by

@@ -29,9 +29,6 @@ describe('ThankMainComponent', () => {
     // query for the title <h1> by CSS element selector
     de = fixture.debugElement.query(By.css('em'));
     el = de.nativeElement;
-
-    debugH1 = fixture.debugElement.query(By.css('h1'));
-    elementH1 = debugH1.nativeElement;
   });
 
   // TESTS TO RUN
@@ -39,24 +36,8 @@ describe('ThankMainComponent', () => {
     expect(comp).toBeTruthy();
   });
 
-  it('should display the original header', () => {
-    fixture.detectChanges();
-    expect(elementH1.textContent).toContain(comp.anotherTest);
-  });
-
   it('should display original message', () => {
     fixture.detectChanges();
     expect(el.textContent).toContain(comp.testMessage);
   });
-
-  it('should display this message', () => {
-    comp.testMessage = 'Im dancin like a monkey!';
-    fixture.detectChanges();
-    expect(el.textContent).toContain('Im dancin like a monkey!');
-  });
-
-  it('should have a header that displays the monkey message', () => {
-    fixture.detectChanges();
-    expect(elementH1.textContent).toContain('What is up');
-  })
 });

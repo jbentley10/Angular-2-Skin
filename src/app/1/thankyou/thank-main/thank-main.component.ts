@@ -13,6 +13,8 @@ export class ThankMainComponent {
   testMessage: any;
   anotherTest: any;
 
+  public formFName;
+
   constructor (public echos: GlobalDirective,public form: MainFormComponent) {
     this.testMessage = 'Im dancin like a monkey!';
     this.anotherTest = 'What is up';
