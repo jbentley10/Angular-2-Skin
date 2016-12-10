@@ -4,6 +4,7 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { TermsComponent } from './terms.component';
+import { PrivacyComponent } from '../privacy/privacy.component';
 
 describe('TermsComponent', () => {
   let component: TermsComponent;
@@ -20,9 +21,5 @@ describe('TermsComponent', () => {
     fixture = TestBed.createComponent(TermsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
   });
 });

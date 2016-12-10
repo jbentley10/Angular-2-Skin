@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ModalComponent } from '../modal.component';
 
 @Component({
@@ -6,7 +6,7 @@ import { ModalComponent } from '../modal.component';
   templateUrl: './privacy.component.html',
   styleUrls: ['./privacy.component.scss']
 })
-export class PrivacyComponent implements OnInit {
+export class PrivacyComponent {
 
   constructor() { }
 

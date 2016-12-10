@@ -3,9 +3,11 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
+        <em>{{ testMessage }}</em>
+        <h1>{{ anotherTest }}</h1>
         <strong>Thank you <span [innerText]="form.fName"></span> for your purchase!</strong>
         <p>
-          We hope you enjoy the benefits of <span [innerText]="echos.productName"></span><br /> Your order is scheduled to arrive by <span><script type="text/javascript">getDate(5)</script></span>
+          We hope you enjoy the benefits of <span id="product-name" [innerText]="echos.productName"></span><br /> Your order is scheduled to arrive by
         </p>
       </div>
     </div>

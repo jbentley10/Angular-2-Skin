@@ -4,6 +4,7 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { MainInfoComponent } from './main-info.component';
+import { MainFormComponent } from '../main-form/main-form.component';
 
 describe('MainInfoComponent', () => {
   let component: MainInfoComponent;
@@ -20,9 +21,5 @@ describe('MainInfoComponent', () => {
     fixture = TestBed.createComponent(MainInfoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
   });
 });

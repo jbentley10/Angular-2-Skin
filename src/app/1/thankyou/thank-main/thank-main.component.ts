@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { GlobalDirective } from '../../../global.directive';
 import { MainFormComponent } from '../../lander/main-form/main-form.component';
 
@@ -6,13 +6,17 @@ import { MainFormComponent } from '../../lander/main-form/main-form.component';
   selector: 'app-thank-main',
   templateUrl: './thank-main.component.html',
   styleUrls: ['./thank-main.component.scss'],
-  providers:[MainFormComponent]
+  providers: [GlobalDirective, MainFormComponent]
 })
-export class ThankMainComponent implements OnInit {
 
-  
+export class ThankMainComponent {
+  testMessage: any;
+  anotherTest: any;
 
-  constructor (public echos: GlobalDirective,public form: MainFormComponent) {}
+  constructor (public echos: GlobalDirective,public form: MainFormComponent) {
+    this.testMessage = 'Im dancin like a monkey!';
+    this.anotherTest = 'What is up';
+  }
 
   ngOnInit() {
   }
