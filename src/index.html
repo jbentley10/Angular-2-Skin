@@ -21,6 +21,230 @@
     <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
 
+    <!-- SKIN STUFF -->
+    <link rel="stylesheet" href="app/d/styles/app.css" />
+    <link rel="icon" href="assets/images/favicon.html">
+    <link rel="stylesheet" href="app/d/styles/popupwindow.css?v=1.2" type="text/css">
+    <link href="app/d/styles/style.css" rel="stylesheet" type="text/css" />
+    <link href="app/d/styles/style2.css" rel="stylesheet" type="text/css" />
+    <link type='text/css' href='resources/css/kprofile.css' rel='stylesheet' />
+    <link type='text/css' href='resources/css/kform.css' rel='stylesheet' />
+    <link type='text/css' href='resources/css/kcart.css' rel='stylesheet' />
+    <script type="text/javascript">
+      console.log(window.location.hash);
+      if (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile/i.test(navigator.userAgent)) {
+        if (window.location.hash == "#desktop") {
+          // Stay on desktop website
+        } else {
+          window.location = "https://<?php echo $site ;?>/m/<?php echo $version; ?>/index.php?<?php echo $path ?>";
+        }
+      }
+    </script>
+    <style type="text/css">
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+
+      #map {
+        height: 100%;
+      }
+
+      .exitpopup-overlay {
+        background: rgba(49, 49, 49, 0.8) none repeat scroll 0 0;
+        opacity: 1;
+      }
+
+      .exitpop-content img {
+        top: 0;
+      }
+
+      #loading-indicator {
+        background-color: rgba(0, 0, 0, 0.5);
+        bottom: 0;
+        box-sizing: border-box;
+        height: 100%;
+        left: 0;
+        margin: 0 auto;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 100%;
+        padding: 0px !important;
+        margin: 0px !important;
+        font-size: 1px;
+        z-index: 99990;
+      }
+
+      #loading-indicator:before {
+        background: url("app/assets/images/loading.gif") no-repeat center center;
+        box-sizing: border-box;
+        content: "";
+        height: 70px;
+        left: 50%;
+        margin-left: -35px;
+        margin-top: -70px;
+        position: absolute;
+        top: 50%;
+        width: 70px;
+        z-index: 99996;
+      }
+
+      #loading-indicator:after {
+        background: #fff;
+        border-radius: 5px;
+        box-sizing: border-box;
+        color: #000;
+        content: "Processing, one moment please... ";
+        font-family: arial;
+        font-size: 17px;
+        height: 110px;
+        left: 50%;
+        line-height: 98px;
+        margin-left: -150px;
+        margin-top: -75px;
+        padding-top: 35px;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        width: 300px;
+        z-index: 99995;
+      }
+
+      .btn {
+        -webkit-border-radius: 5;
+        -moz-border-radius: 5;
+        border-radius: 5px;
+        color: #000000;
+        font-size: 20px;
+        font-weight: bold;
+        background: #00EFC5;
+        padding: 20px 25px 20px 25px;
+        text-decoration: none;
+        width: 90%;
+        margin: 0 0 0 15px;
+        transition: all .2s ease-in-out;
+        box-shadow: 0px 0px 0px #2a2a2a;
+      }
+
+      .btn:hover {
+        background: #E25E9D;
+        color: #fff;
+        text-decoration: none;
+        transform: scale(1.05);
+        transition: all .2s ease-in-out;
+        box-shadow: 3px 3px 6px #3a3a3a;
+        cursor: pointer;
+      }
+    </style>
+    <style>
+      .input-validation {
+        position: relative;
+      }
+
+      input[type="text"]:valid~.input-validation::before {
+        content: "\f00c";
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit;
+        color: green;
+        font-size: 18px;
+        padding-right: 0.5em;
+        position: absolute;
+        top: 5px;
+        right: 20px;
+      }
+
+      input[type="email"]:valid~.input-validation::before {
+        content: "\f00c";
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit;
+        color: green;
+        font-size: 18px;
+        padding-right: 0.5em;
+        position: absolute;
+        top: 5px;
+        right: 20px;
+      }
+
+      input[type="number"]:valid~.input-validation::before {
+        content: "\f00c";
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit;
+        color: green;
+        font-size: 18px;
+        padding-right: 0.5em;
+        position: absolute;
+        top: 5px;
+        right: 20px;
+      }
+
+      .text {
+        position: relative;
+        display: block;
+        height: 26px;
+        margin-bottom: 15px;
+      }
+
+      .redbar-text {
+        color: #fff;
+        font-size: 15px;
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+      }
+
+      .adjuster {
+        position: relative;
+        left: 30px;
+      }
+
+      .top_left7 {
+        position: absolute;
+        top: 334px;
+        left: 140px;
+      }
+
+      .giftPackage {
+        position: absolute;
+        right: -43px;
+        bottom: 79px;
+        ;
+      }
+
+      .top_left8 {
+        margin: 0 auto;
+        background: url("assets/images/holidayLogos.jpg");
+        background-size: cover;
+        width: 58%;
+        height: 185px;
+        background-repeat: no-repeat;
+        text-align: center;
+        margin: 0 auto;
+      }
+
+      .pac-container {
+        background-color: #fff;
+        position: absolute!important;
+        z-index: 1000;
+        border-radius: 2px;
+        border-top: 1px solid #d9d9d9;
+        font-family: Arial, sans-serif;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        overflow: hidden;
+      }
+    </style>
+    <!-- END SKIN STUFF -->
+
+    <!-- Konnektive -->
+
+
   </head>
 
   <body>
@@ -32,5 +256,283 @@
 
   <!-- Bootstrap JS CDN -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+
+  <!-- SKIN STUFF -->
+  <div id="exitpopup-overlay" class="exitpopup-overlay">
+    <div id="exit_pop" class="exitpop-content">
+      <a href="discount.html"><img src="assets/images/downsell.jpg" /></a>
+    </div>
+  </div>
+
+
+  <!-- Google Maps! -->
+  <script>
+    // This example displays an address form, using the autocomplete feature
+    // of the Google Places API to help users fill in the information.
+
+    // This example requires the Places library. Include the libraries=places
+    // parameter when you first load the API. For example:
+    // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+
+    var placeSearch, autocomplete;
+    var componentForm = {
+      street_number: 'short_name',
+      route: 'long_name',
+      locality: 'long_name',
+      administrative_area_level_1: 'short_name',
+      country: 'long_name',
+      postal_code: 'short_name'
+    };
+
+    function initAutocomplete() {
+      // Create the autocomplete object, restricting the search to geographical
+      // location types.
+      autocomplete = new google.maps.places.Autocomplete(
+        /** @type {!HTMLInputElement} */
+        (document.getElementById('autocomplete')), {
+          types: ['geocode']
+        });
+
+      // When the user selects an address from the dropdown, populate the address
+      // fields in the form.
+      autocomplete.addListener('place_changed', fillInAddress);
+    }
+
+    function fillInAddress() {
+      // Get the place details from the autocomplete object.
+      var place = autocomplete.getPlace();
+
+      for (var component in componentForm) {
+        document.getElementById(component).value = '';
+        document.getElementById(component).disabled = false;
+      }
+
+      // Get each component of the address from the place details
+      // and fill the corresponding field on the form.
+      for (var i = 0; i < place.address_components.length; i++) {
+        var addressType = place.address_components[i].types[0];
+        if (componentForm[addressType]) {
+          var val = place.address_components[i][componentForm[addressType]];
+          document.getElementById(addressType).value = val;
+        }
+      }
+    }
+
+    // Bias the autocomplete object to the user's geographical location,
+    // as supplied by the browser's 'navigator.geolocation' object.
+    function geolocate() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+          var geolocation = {
+            lat: position.coords.latitude,
+            lng: position.coords.longitude
+          };
+          var circle = new google.maps.Circle({
+            center: geolocation,
+            radius: position.coords.accuracy
+          });
+          autocomplete.setBounds(circle.getBounds());
+        });
+      }
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHxAvmuxH8KYBXsE3BjsnU8YTKSaI-Qi8&libraries=places&callback=initAutocomplete" async defer></script>
+
+  <!-- End Google maps -->
+
+  <script src="app/d/scripts/main.js" type="text/javascript"></script>
+  <!--        <script src="assets/js/popupwindow.js" type="text/javascript"></script>-->
+  <!--        <script src="assets/js/control.js" type="text/javascript"></script>-->
+  <script type="text/javascript">
+    window.formSubmitted = false;
+    window.internalLink = false;
+
+    $(document).ready(function(e) {
+      $('a').click(function() {
+        window.internalLink = true;
+      });
+
+      var exitMessage = '\n*****************************************\nWAIT!!\n\nSpecial Discount Activated!\n\nVALID TODAY ONLY!\n*****************************************\n\nClick STAY ON PAGE below to receive your instant discount.\n';
+
+      if (exitMessage) {
+        function pageUnload() {
+          if (!window.internalLink) {
+            window.internalLink = false;
+            $("#exitOverlay").css('height', $(document).height());
+            $(".exitpop").show();
+            return exitMessage;
+            return false;
+          }
+        }
+
+        window.onbeforeunload = pageUnload;
+      }
+      //modalOnClick();
+      $('#order_form').submit(function() {
+        window.internalLink = true;
+        $(".exitpop").hide();
+      });
+
+      $('#exitPopup').click(function() {
+        exitAction();
+        return false;
+      });
+
+      function exitAction() {
+        $("#exitOverlay").hide();
+        $(".exitpop").hide();
+        $(".redbar").slideDown('fast');
+        $("#discount_price").html('-$7.00');
+        $("#total_price").html('$2.95');
+        $("#shipping_price").val('2.95');
+        window.location.href = "discount.php";
+      }
+
+
+    });
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADI66lew445nAyCyPGJaiOgDjG_ra4IKU">
+  </script>
+
+  <script type="text/javascript">
+    $(function() {
+      $('.zip-change').on('blur keyup', function() {
+        var $this = $(this);
+        //console.log("step 1");
+        if ($this.val().length == 5) {
+          getAddressInfoByZip($this.val());
+        }
+      });
+
+      $(".phn").keydown(function(e) {
+        // Allow: backspace, delete, tab, escape, enter and .
+        if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 || (e.keyCode == 65 && (e.ctrlKey === true || e.metaKey === true)) || (e.keyCode >= 35 && e.keyCode <= 40)) {
+          return;
+        }
+        if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+          e.preventDefault();
+        }
+      });
+    });
+
+    function getAddressInfoByZip(zip) {
+      //console.log("step 2");
+      if (zip.length >= 5 && typeof google != 'undefined') {
+        var addr = {};
+        var geocoder = new google.maps.Geocoder();
+        geocoder.geocode({
+          'address': zip
+        }, function(results, status) {
+          if (status == google.maps.GeocoderStatus.OK) {
+            if (results.length >= 1) {
+              for (var ii = 0; ii < results[0].address_components.length; ii++) {
+                var street_number = route = street = city = state = zipcode = country = formatted_address = '';
+                var types = results[0].address_components[ii].types.join(",");
+                if (types == "street_number") {
+                  addr.street_number = results[0].address_components[ii].long_name;
+                }
+                if (types == "route" || types == "point_of_interest,establishment") {
+                  addr.route = results[0].address_components[ii].long_name;
+                }
+                if (types == "sublocality,political" || types == "locality,political" || types == "neighborhood,political" || types == "administrative_area_level_3,political") {
+                  addr.city = (city == '' || types == "locality,political") ? results[0].address_components[ii].long_name : city;
+                }
+                if (types == "administrative_area_level_1,political") {
+                  addr.state = results[0].address_components[ii].short_name;
+                }
+                if (types == "postal_code" || types == "postal_code_prefix,postal_code") {
+                  addr.zipcode = results[0].address_components[ii].long_name;
+                }
+                if (types == "country,political") {
+                  addr.country = results[0].address_components[ii].long_name;
+                }
+              }
+              addr.success = true;
+              for (name in addr) {
+                //console.log('### google maps api ### ' + name + ': ' + addr[name]);
+              }
+              //response(addr);
+              //console.log(addr);
+
+              // Autopopulate city and state
+              if (addr.country == 'United States') {
+                var state = addr.state;
+                var city = addr.city;
+                $('#fields_state').find($('#fields_state').val(state)).attr('selected', 'selected');
+                $('#fields_city').val(city);
+                $('.zip-change').addClass('valid').removeClass('error');
+              } else {
+                //$('#error_handler_overlay1').show();
+                //$('#error').html($('.zip-change').val() + ' is wrong US zip code');
+                //alert($('.zip-change').val()+' is wrong zip code');
+                $('#fields_state').find($('#fields_state').val('')).attr('selected', 'selected');
+                $('.zip-change').addClass('error').removeClass('valid');
+                //$('.zip-change').val('');
+                $('#fields_city').val('');
+                return false;
+              }
+
+
+            } else {
+              //response({success:false});
+              return false;
+            }
+          } else {
+            //response({success:false});
+            return false;
+          }
+        });
+      } else {
+        //response({success:false});
+        return false;
+      }
+    }
+
+    function response(obj) {
+      //console.log(obj);
+    }
+
+    //console.log(country);
+  </script>
+  <script>
+    function startTimer(duration, display) {
+      var timer = duration,
+        minutes, seconds;
+      setInterval(function() {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+          timer = duration;
+        }
+      }, 1000);
+    }
+
+    window.onload = function() {
+      var fiveMinutes = 60 * 5,
+        display = document.querySelector('#time');
+      startTimer(fiveMinutes, display);
+    };
+  </script>
+  <script type="text/javascript">
+    function getDate(days) {
+      var dayNames = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+      var monthNames = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+      var now = new Date();
+      now.setDate(now.getDate() + days);
+      var nowString = monthNames[now.getMonth()] + " " + now.getDate() + ", " + now.getFullYear();
+      document.write(nowString);
+    }
+  </script>
+  <!-- END SKIN STUFF -->
+
+
 
 </html>

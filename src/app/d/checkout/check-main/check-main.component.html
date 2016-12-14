@@ -1,0 +1,69 @@
+<div class="main_cont_body">
+  <div class="main">
+    <div class="main_header">
+      <p><img src="../../../../assets/images/main_header_icon.png" width="33" height="20" alt="" title="" /> {{ randomGuests }} others are viewing this offer right now - <span id="time">05:00</span></p>
+    </div>
+    <!--  <h1 class="chek_discount_arrow"><img src="../../../../assets/images/chek_discount_arrow.png" height="22" width="22" alt="" title="" /> DISCOUNT ACTIVATED, SAVINGS APPLIED!</h1> -->
+    <p class="great_choice"><strong>Great Choice, <?php echo $customerName ; ?>!</strong> You're taking your first step towards a better skin. Act now so you don't miss out on this offer!</p>
+    <p class="low_stick"> Current Availability: <img src="../../../../assets/images/low_stick.png" height="19" width="63" alt="" title="" /><span>LOW STOCK.</span> Sell-out Risk: <strong>HIGH </strong> </p>
+    <div class="bolder_chk_checkout">
+
+      <p>Your order is scheduled to arrive by <strong><script type="text/javascript">getDate(5)</script></strong></p>
+    </div>
+    <div class="hero_checkout">
+      <div class="hero_left"> <img class="chk_double_bottle" src="../../../../assets/images/product1.png" width="203" height="103" alt="" title="" /> </div>
+      <div class="hero_right">
+        <p><strong>{{ productName }}</strong> 30g - 30 Day Supply</p>
+        <ul>
+          <li class="price_chk"> <span>Price:</span>
+            <p id="pri">$ {{ checkPrice }}
+            </p>
+            <div class="clear"></div>
+          </li>
+          <li> <span>Shipping &amp; Handling:</span>
+            <p id="shipping">$ {{ shipping }}
+            </p>
+            <div class="clear"></div>
+          </li>
+          <li> <span>NEW TOTAL</span>
+            <p id="tot">$ {{ shipping }}
+            </p>
+            <div class="clear"></div>
+          </li>
+        </ul>
+        <img class="chk_port" src="../../../../assets/images/chk_port.jpg" width="337" height="68" alt="" title="" /> </div>
+      <!--    <div id='insureship'>
+
+                <div style="clear:both"></div>
+                <div class="ppimg"><img src="../../../../assets/images/protect-package-hover.png" alt="protect package" /></div>
+                <div class="protect-package" style="padding-left: 70px;">
+
+
+
+                    <input type="checkbox" class="kformCheckoutUpsell" name="productId" productid="<?php echo $offer2->productId; ?>" value="<?php echo $offer2->productId; ?>" onchange="checkShip();" id="ship" checked>
+
+
+                    Yes, add Shipping Protection <em>(will be billed separately)</em> for $
+                    <?php echo $shipProtection_productPrice; ?> to my order.
+                        <br /> Add guaranteed shipping to your order. If a shipment is lost or stolen, a new order will be immediately sent free of charge.
+                        <div style="clear:both"></div>
+
+                </div>
+
+
+                <div style="clear:both"></div>
+
+            </div> -->
+      <img src="../../../../assets/images/chek_arrow.png" width="649" height="96" alt="" title="" />
+      <div class="clear"></div>
+    </div>
+  </div>
+  <aside class="aside">
+    <div class="aside_head">
+      <h1>FINAL STEP</h1>
+      <h2>PAYMENT INFORMATION</h2>
+    </div>
+    <app-check-form></app-check-form>
+  </aside>
+  <div class="clear"></div>
+</div>

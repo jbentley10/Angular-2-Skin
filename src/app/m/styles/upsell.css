@@ -1,0 +1,549 @@
+#outer-wrapper {
+    background: url(../images/cp-bg.jpg) top center no-repeat;
+    margin: 0 auto;
+    height: 960px;
+    width: 100%;
+}
+
+.after:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.pink {
+    color: #b32079;
+}
+
+.red {
+    color: red;
+}
+
+.it {
+    font-style: italic;
+}
+
+.bl {
+    font-weight: bold;
+}
+
+.tc {
+    text-align: center;
+}
+
+#wrapper {
+    width: 698px;
+    margin: 0px auto;
+    position: relative;
+    background: white;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: #000000 0px -62px 41px -8px;
+    -webkit-box-shadow: #000000 0px -62px 41px -8px;
+    -moz-box-shadow: #000000 0px -62px 41px -8px;
+    -ms-box-shadow: #000000 0px -62px 41px -8px;
+}
+
+#wrapper #banner {
+    border-bottom: 1px solid #b2b2b2;
+    height: 94px;
+}
+
+#wrapper #banner #steps {
+    width: 295px;
+    height: 5px;
+    top: 40px;
+    left: 315px;
+    background: #bab6b1;
+    position: absolute;
+    text-align: center;
+}
+
+#wrapper #banner #steps #ty-slider {
+    height: 3px;
+    width: 143px !important;
+    background: #ed145b;
+    position: relative;
+    top: 1px;
+}
+
+#wrapper #banner #steps ul {
+    position: relative;
+}
+
+#wrapper #banner #steps .step {
+    width: 20px;
+    height: 20px;
+    background: #bab6b1;
+    box-shadow: 0 0 0px 3px #b2b2b2;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+#wrapper #banner #steps ul li .step-name {
+    position: relative;
+    left: -25px;
+    padding-top: 8px;
+    font-weight: 600;
+}
+
+#wrapper #banner #steps .step-1 .step-name,
+#wrapper #banner #steps .step-2 .step-name {
+    color: #5a5a5a;
+    left: -43px;
+}
+
+#wrapper #banner #steps .step-3 .step-name {
+    color: #5a5a5a;
+}
+
+#wrapper #banner #steps .step-1,
+#wrapper #banner #steps .step-2,
+#wrapper #banner #steps .step-3 {
+    top: -8px;
+    position: absolute;
+    z-index:
+}
+
+#wrapper #banner #steps .step-1 {
+    left: -20px;
+}
+
+#wrapper #banner #steps .step-2 {
+    left: 142px;
+}
+
+#wrapper #banner #steps .step-3 {
+    right: -82px;
+}
+
+#wrapper #banner #steps .step-1 div,
+#wrapper #banner #steps .step-2 div {
+    background: #ed145b;
+    transition: background 3s;
+    -webkit-transition: background 3s;
+    -ms-transition: background 3s;
+}
+
+#wrapper #banner #steps .thank-you div {
+    transition: background 2s;
+    -webkit-transition: background 2s;
+    -ms-transition: background 2s;
+    background: #BAB6B1 !important;
+}
+
+#wrapper #banner #steps .step p {
+    position: relative;
+    z-index: 10;
+    top: 3px;
+}
+
+.f20 {
+    font-size: 20px;
+}
+
+.f18 {
+    font-size: 18px;
+}
+
+.f14 {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.blue {
+    color: #005560;
+}
+
+.blue {
+    color: #00cac0;
+}
+
+.green {
+    color: #66cc33;
+}
+
+.grey-1 {
+    color: #555;
+}
+
+.grey-2 {
+    color: #5a5a5a;
+}
+
+.turquoise {
+    color: #01bba3;
+}
+
+#steps {
+    margin-bottom: 20px;
+}
+
+.b-r3 {
+    border-radius: 0px 3px 3px 0px;
+}
+
+.b-l3 {
+    border-radius: 3px 0px 0px 3px;
+}
+
+#thank-you {
+    width: 100%;
+    float: right;
+}
+
+#ty-msg {
+    padding: 40px 0 25px 0;
+    border-bottom: 1px solid #b2b2b2;
+}
+
+#ty-msg p {
+    margin-bottom: 5px;
+}
+
+#upsell {
+	font: 29px OpenSansRegular;
+	}
+
+#upsell a {
+    text-decoration: none;
+}
+
+#upsell-btn {
+    background: url(../../../assets/images/upsell.jpg) no-repeat;
+    width: 476px;
+    height: 242px;
+    margin: 0 auto;
+    display: block;
+    background-position: 0 0;
+    color: #043c8f;
+    position: relative;
+    /* padding: 68px 32px 0 0; */
+}
+
+#upsell-btn .prod {
+    position: absolute;
+    left: 21px;
+    top: 15px;
+}
+
+#upsell-btn p {
+    margin-bottom: 23px;
+    font-size: 16px;
+}
+
+#upsell-btn-content {
+    position: absolute;
+    right: 30px;
+    top: 67px;
+}
+
+#upsell-btn-content span.f22 {
+    line-height: 28px;
+}
+
+#upsell-btn-content span.f20 {
+    line-height: 25px;
+}
+
+#wait {
+    margin: 0 0 30px 0;
+    text-decoration: none;
+}
+
+#wait p {
+    margin-bottom: 7px;
+}
+
+.form-button {
+    position: relative;
+    top: 37px;
+    left: 20px;
+}
+
+.cta a,
+#down-btn {
+    position: absolute;
+    right: 25px;
+    top: 16px;
+    background: #00efc5;
+    text-align: right;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    color: #000;
+    border: none;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 20px 25px 20px 35px;
+    cursor: pointer;
+    box-shadow: 4px 4px 0 0 #7b7b7b;
+    display: block;
+    text-decoration: none;
+}
+
+.cta a .arrow {
+    position: relative;
+    left: -10px;
+    bottom: 2px;
+}
+
+.cta a:active {
+    margin-top: 4px;
+    box-shadow: 0 0 0 0 #ff8400;
+}
+
+#up-btn {
+    width: 271px;
+    margin: 0 auto;
+    position: relative;
+    background: #00efc5;
+    text-align: right;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    color: #000;
+    border: none;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 20px 25px 20px 35px;
+    cursor: pointer;
+    box-shadow: 4px 4px 0 0 #7b7b7b;
+    display: block;
+    text-decoration: none;
+}
+
+.but3 {
+    background: #00EFC5;
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+    display: block;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    color: #000;
+    position: relative;
+    width: 336px;
+    margin: 0px auto;
+    cursor: pointer;
+    height: 68px;
+}
+
+#up-btn #lock {
+    background: url(../images/locked.png) no-repeat;
+    width: 18px;
+    height: 23px;
+    position: absolute;
+    top: 10px;
+    left: 18px;
+}
+
+#upsell:active #up-btn {
+    top: 4px;
+    box-shadow: 0 0 0 0 #ff8400;
+}
+
+#lock,
+#cards {
+    margin: 10px auto;
+    display: block
+}
+
+#decline {
+    font-size: 14px;
+    margin: 115px auto 0;
+    width: 250px;
+    position: relative;
+    left: -25px;
+    text-decoration: underline;
+    padding-bottom: 10px;
+    color: black;
+}
+
+#decline img {
+    vertical-align: -14%;
+}
+
+.bb {
+    border-bottom: 1px solid #dbdada;
+}
+
+.br {
+    border-right: 1px solid #acacac;
+}
+
+#totals {
+    width: 100%;
+    float: right;
+}
+
+#total {
+    margin-top: 10px
+}
+
+#terms {
+    font-size: 10.5px;
+    line-height: 16px;
+    color: #aaaaaa;
+    width: 658px;
+    margin: 0 auto;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 20px;
+}
+
+#dedicated {
+    padding-top: 40px;
+    width: 658px;
+    margin: 0 auto;
+    font-size: 12px;
+    line-height: 17px;
+    font-family: 'Open Sans', Arial;
+}
+
+#dedicated p {
+    width: 85%;
+    display: inline-block;
+    padding-left: 10px;
+}
+
+#dedicated img {
+    display: inline-block;
+    vertical-align: -110%;
+}
+
+footer {
+    font-family: 'Open Sans', sans-serif;
+    width: 290px;
+    margin: 0px auto;
+    position: relative;
+    color: #8a8a8a;
+    padding-top: 0px;
+    text-transform: uppercase;
+}
+
+footer p a {
+    color: #8a8a8a;
+}
+
+footer p {
+    text-align: center;
+    clear: both;
+}
+
+.f11 {
+    font-size: 11px;
+}
+
+.tc {
+    text-align: center;
+}
+
+.pt10 {
+    padding-top: 10px;
+}
+
+.pb20 {
+    padding-bottom: 20px;
+}
+
+#preloader {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: none;
+}
+
+#preloader .overlay {
+    background: #000;
+    opacity: .5;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+#spinner-content {
+    width: 200px;
+    margin: 20% auto;
+    position: relative;
+    z-index: 3;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    background: white;
+    padding: 15px 25px 35px 25px;
+    /*box-shadow: 0px 0px 20px 0px #000;*/
+    border: 1px solid #ccc;
+    line-height: 19px;
+}
+
+#spinner {
+    height: 50px;
+    width: 50px;
+    border-width: 5px;
+    background: url(../images/pre-spinner.png);
+    margin: 55px auto;
+    -webkit-animation: clockwise 0.75s linear infinite;
+    -moz-animation: clockwise 0.75s linear infinite;
+    -ms-animation: clockwise 0.75s linear infinite;
+    animation: clockwise 0.75s linear infinite;
+}
+
+@-webkit-keyframes clockwise {
+    to {
+        -webkit-transform: rotate(360deg) translatez(0);
+        transform: rotate(360deg) translatez(0);
+    }
+}
+
+@-moz-keyframes clockwise {
+    to {
+        -moz-transform: rotate(360deg) translatez(0);
+        transform: rotate(360deg) translatez(0);
+    }
+}
+
+@-ms-keyframes clockwise {
+    to {
+        -ms-transform: rotate(360deg) translatez(0);
+        transform: rotate(360deg) translatez(0);
+    }
+}
+
+@keyframes clockwise {
+    to {
+        transform: rotate(360deg) translatez(0);
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    #outer-wrapper {
+        background-size: 135%;
+        margin: 0 auto;
+        width: 100%;
+        min-width: 1300px;
+        overflow: hidden;
+    }
+}
+div#upText {padding: 66px 28px 0 0;}
+
+img {}
+
+input[type="button"], input[type="submit"], button, .button {
+    border: 0;
+    /* width: 100%; */
+    display: block;
+    cursor: pointer;
+    position: relative;
+    outline: 0;
+    padding: 20px 15px;
+    background: #2288D0;
+    color: #fff;
+    font-size: 20px;
+}
+input[type="button"]:hover, input[type="submit"]:hover, button:hover, .button:hover{
+     background: #2791E4;
+}

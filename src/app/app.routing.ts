@@ -1,7 +1,7 @@
 import { RouterModule, Routes } from "@angular/router";
-import { LanderComponent } from './1/lander/lander.component';
-import { CheckoutComponent } from './1/checkout/checkout.component';
-import { ThankyouComponent } from './1/thankyou/thankyou.component';
+import { LanderComponent } from './m/lander/lander.component';
+import { CheckoutComponent } from './m/checkout/checkout.component';
+import { ThankyouComponent } from './m/thankyou/thankyou.component';
 
 const APP_ROUTES: Routes = [
   { path: 'checkout', component: CheckoutComponent },
