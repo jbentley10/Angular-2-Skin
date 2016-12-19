@@ -1,0 +1,310 @@
+body{
+    background: #fff;
+}
+
+#wrapper{
+    width: 320px;
+    margin: 0 auto;
+    font-family: 'Open Sans', helvetica;
+    position: relative;
+    overflow-x: hidden;
+}
+#confirm{
+    padding: 15px 20px 15px 20px;
+    border-bottom: 1px solid #d6d6d6;
+    background: #fff;
+}
+#confirm h1{
+    font-size: 13px;
+    font-weight: bold;
+    color: #5a5a5a;
+    margin-bottom: 2px;
+}
+#confirm p{
+    font-size: 11px;
+    line-height: 16px;
+    color: #5a5a5a;
+}
+#thank-you{
+    padding: 20px 20px 0 20px;
+    background: #fff;
+}
+#thank-you #ty-msg > h2{
+    font-weight: bold;
+    font-size: 12px;
+    color: #ff0000;
+    margin-bottom: 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+#thank-you #ty-msg > a{
+    background: url(../img/ty-msg.jpg) no-repeat;
+    width: 100%;
+    height: 148px;
+    background-size: 100%;
+    display: block;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    margin-bottom: 20px;
+}
+#thank-you #ty-msg > p{
+    text-align: center;
+    font-size: 11px;
+    line-height: 14px;
+    margin-bottom: 20px;
+    color: #5a5a5a
+}
+
+#thank-you #ty-msg2 > h2{
+    font-weight: bold;
+    font-size: 12px;
+    color: #ff0000;
+    margin-bottom: 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+#thank-you #ty-msg2 > a{
+    background: url(../img/ty-msg2.jpg) no-repeat;
+    width: 100%;
+    height: 148px;
+    background-size: 100%;
+    display: block;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    margin-bottom: 20px;
+}
+#thank-you #ty-msg2 > p{
+    text-align: center;
+    font-size: 11px;
+    line-height: 14px;
+    margin-bottom: 20px;
+    color: #5a5a5a
+}
+
+/*#purple-area{
+    padding: 0px 5% 0px 5%;
+    background-color: #222222;
+}
+*/
+#purple-area {
+    background-color: #222222;
+    padding: 0% 0.5%;
+}
+#up-lock-two{
+    width: 5%;
+}
+input[type="submit"]{
+    background: url(../../../assets/images/m/cp-1-off-btn.png) no-repeat;
+    width: 95%;
+    margin: 0 2.5% 0 2.5%;
+    height: 78px;
+    background-size: 100%;
+}
+input[type="submit"]:active:hover, #thank-you:active:hover input[type="submit"]{
+    background: url(../../../assets/images/m/lp-off-btn.png) no-repeat;
+    background-size: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+#no-thanks{
+    width: 180px;
+    padding-top:5px;
+    margin: 0px auto;
+}
+#no-thanks > img{
+    vertical-align: -15%;
+    width: 7%;
+}
+#no-thanks a{
+    color: lightgrey;
+    font-size: 11px;
+}
+#security-tag{
+    padding: 15px 40px;
+    margin: 0 auto;
+    color: lightgrey;
+}
+#security-tag p{
+    text-align: center;
+    font-size: 10px;
+}
+#security-tag img{
+    vertical-align: -20%;
+    width:3.7%;
+}
+#security{
+    width: 53%;
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    }
+#btm{
+    background: #222;
+    color: white;
+    padding-top: 10px;
+}
+#terms{
+    padding: 0px 20px 0px 20px;
+}
+footer{
+    padding-bottom: 15px;
+    padding-top:0px !important;
+}
+
+
+.upsell-container {
+    width: 98.8%;
+    height: 200px;
+    margin: 0 auto;
+    margin: 10px 0 10px 0;
+    border: dashed 2px #000;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: #e1ffff;
+    /* Old browsers */
+    /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, #e1ffff 0%, #e1ffff 7%, #e1ffff 12%, #e6f8fd 30%, #c8eefb 54%, #bee4f8 75%, #b1d8f5 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: -webkit-radial-gradient(center ellipse, #e1ffff 0%, #e1ffff 7%, #e1ffff 12%, #e6f8fd 30%, #c8eefb 54%, #bee4f8 75%, #b1d8f5 100%);
+    background: radial-gradient(ellipse at center, #e1ffff 0%, #e1ffff 7%, #e1ffff 12%, #e6f8fd 30%, #c8eefb 54%, #bee4f8 75%, #b1d8f5 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#e1ffff', endColorstr='#b1d8f5', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
+
+.upsell-container h1 {
+    color: #1FB39B;
+    margin: 5% 0 0 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    font-size: 15px;
+}
+
+.upsell-container h2 {
+    color: #02569E;
+    margin: 5% 0 0 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    font-size: 15px;
+}
+
+.upsell-container h3 {
+    color: #02569E;
+    margin: 5% 0 0 0;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 15px;
+}
+
+.upsell-image {
+    margin: 10% 0 0 0;
+    width: 35%;
+    height: auto;
+}
+
+.upsell-container p {
+    color: #02569E;
+    margin: 0 0 0 0;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 1%;
+}
+
+.upsell-text {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 70%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-right: 5px;
+    font-size: 10px;
+}
+
+.btn {
+    border-radius: 5px;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    background: #00EFC5;
+    padding: 10px 15px 10px 15px;
+    text-decoration: none;
+    width: 100%;
+    margin: 0 0 0 0;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    box-shadow: 0px 0px 0px #2a2a2a;
+}
+
+.btn:hover {
+    background: #ED145B;
+    color: #fff;
+    text-decoration: none;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    box-shadow: 3px 3px 6px #3a3a3a;
+    cursor: pointer;
+}
+
+.no-thanks {
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+    color: #000;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    padding-bottom: 15px;
+
+}
+
+.no-thanks:hover {
+    color: #ED145B;
+    text-decoration: underline;
+    transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+}
+
+.upsellFreeTxt {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #ED145B;
+    font-weight: bold;
+}
+
+.upsellPriceTxt {
+font-size: 16px;
+font-weight: bold;
+}

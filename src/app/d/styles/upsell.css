@@ -258,8 +258,8 @@
 
 .form-button {
     position: relative;
-    top: 37px;
-    left: 20px;
+    top: 0;
+    left: 0;
 }
 
 .cta a,
@@ -413,7 +413,7 @@
 
 footer {
     font-family: 'Open Sans', sans-serif;
-    width: 290px;
+    width: 100%;
     margin: 0px auto;
     position: relative;
     color: #8a8a8a;

@@ -94,7 +94,7 @@ div {
     float: left;
     margin: 0 auto;
     padding: 0 30px;
-    width: 680px;
+    width: 670px;
 }
 
 .aside {
@@ -116,7 +116,8 @@ div {
     background: #fff none repeat scroll 0 0;
     padding: 30px 0 0;
     display: inline-block;
-    margin: 0 auto;
+    width: 58%;
+    margin-left: 21%;
 }
 
 .aside_head h1 {

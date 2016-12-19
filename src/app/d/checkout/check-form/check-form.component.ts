@@ -32,6 +32,7 @@ export class CheckFormComponent {
   public hideBilling = true;
 
   public toggleHiddenBilling() {
+    console.log("click");
     this.hideBilling = !this.hideBilling;
   }
 }

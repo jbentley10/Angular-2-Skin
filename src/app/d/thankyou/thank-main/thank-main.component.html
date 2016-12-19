@@ -25,7 +25,7 @@ $currency = $ksdk->currencySymbol;
       </header>
       <div class="section1">
         <h1>THANK YOU FOR YOUR PURCHASE</h1>
-        <span>We hope you enjoy the benefits of <?php echo $productName; ?></span>
+        <span>We hope you enjoy the benefits of</span><span [innerText]="echos.productName"></span>
         <p>Your order is scheduled to arrive by <strong><script type="text/javascript">getDate(5)</script></strong></p>
 
 
@@ -36,13 +36,11 @@ $currency = $ksdk->currencySymbol;
 
           <div class="kthanks_box" style="">
             <div class="kthanks_boxTitle">
-              Items Ordered
+              <strong>Items Ordered</strong>
             </div>
             <div class="kthanks_boxContent">
-
-
               <hr />
-              <div style="float:right">
+              <div style="text-align: left">
                 <div class="kthanks_spacer">
                   <div class="kthanks_label">
                     SubTotal:
@@ -86,7 +84,7 @@ $currency = $ksdk->currencySymbol;
                 Billing Information
               </div>
               <div class="kthanks_boxContent">
-                {{ billingAddress }}<br /> {{ email }}<br /> {{ phone }}<br />
+                <span [innerText]="echos.billAddress"></span><br /><span [innerText]="echos.email"></span><br /> <span [innerText]="echos.phone"></span><br />
               </div>
             </div>
 
@@ -96,25 +94,24 @@ $currency = $ksdk->currencySymbol;
               </div>
 
               <div class="kthanks_boxContent">
-                {{ shippingAddress }}
+                <span [innerText]="echos.shippingAddress"></span>
               </div>
 
             </div>
           </div>
           <div style="clear:both"></div>
 
-          <p>*A confirmation email has been sent to {{ email }} </p>
+          <p>*A confirmation email has been sent to <span [innerText]="echos.email"></span> </p>
 
         </div>
 
 
       </div>
 
-      <p>By submitting, you consent to having read and agreed to our Terms & Conditions and after your day trial period has expired, being enrolled in our membership program is $ {{ trialPrice }} plus shipping per month. You can cancel any time by calling
-        <?php echo $phone; ?>
+      <p>By submitting, you consent to having read and agreed to our Terms & Conditions and after your day trial period has expired, being enrolled in our membership program is $ <span [innerText]="echos.trialPrice"></span> plus shipping per month. You can cancel any time by calling <span [innerText]="echos.phone"></span>
+      </p>
         <br>
-        <p>*A confirmation email has been sent to {{ email }}
-        </p>
+        <p>*A confirmation email has been sent to <span [innerText]="echos.email"></span></p>
 
     </div>
   </div>

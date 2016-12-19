@@ -1,26 +1,26 @@
 <form id='kform' class='kform form'>
   <input type="hidden" name="productId" value="<?= $productId ?>">
   <div class='kform_spacer kform_checkbox' style="margin: 0 10px 15px 0;">
-    <input name='billShipSame' type='CHECKBOX' checked>
+    <input name='billShipSame' type='CHECKBOX' (click)="this.toggleHiddenBilling()" [checked]="this.hideBilling">
     <label for='billShipSame'>
-            Billing Address same as Shipping
-        </label>
+      Billing Address same as Shipping
+    </label>
     <div class="visa-img">
       <img src="../../../../assets/images/chk_visa.png">
     </div>
   </div>
-  <div id='kform_hiddenAddress'>
+  <div id='kform_hiddenAddress' [hidden]="this.hideBilling">
     <div class=''>
       <label>Address:</label>
-      <input name='address1' type='TEXT' isRequired>
+      <input name='address1' type='TEXT' isRequired />
     </div>
     <div class=''>
       <label>Address 2:</label>
-      <input name='address2' type='TEXT'>
+      <input name='address2' type='TEXT' />
     </div>
     <div class=''>
       <label>City:</label>
-      <input name='city' type='TEXT' isRequired>
+      <input name='city' type='TEXT' isRequired />
     </div>
     <div class=''>
       <label>State:</label>
@@ -88,15 +88,15 @@
     </div>
     <div class=''>
       <label>Postal Code:</label>
-      <input name='postalCode' type='TEXT' isRequired>
+      <input name='postalCode' type='TEXT' isRequired />
     </div>
   </div>
   <div>
-    <input type="hidden" name='paySource' value="CREDITCARD">
+    <input type="hidden" name='paySource' value="CREDITCARD" />
     <div style='display:none'>
       <div id='kformPaySourceWrap' inputType='radio'></div>
       <div class='kform_spacer' id='kformNewPaymentType'>
-        <input type='checkbox' name='newPaymentType'>
+        <input type='checkbox' name='newPaymentType' />
         <span>
     New Credit Card
 </span>
@@ -105,7 +105,7 @@
   </div>
   <div>
     <label>Credit Card #:</label>
-    <input name='cardNumber' type='TEXT' maxlength=16 isRequired>
+    <input name='cardNumber' type='TEXT' maxlength=16 isRequired />
   </div>
   <div style="margin-right:0px;">
     <label>Exp. Date:</label>
@@ -146,10 +146,10 @@
   </div>
   <div id="cvv">
     <label>CVV2:</label>
-    <input name='cardSecurityCode' type='TEXT' maxlength=4>
+    <input name='cardSecurityCode' type='TEXT' maxlength=4 />
   </div>
   <div class="kform_spacer kform_checkbox" style="display:none;">
-    <input name="confirmTOS" type="CHECKBOX" isRequired>
+    <input name="confirmTOS" type="CHECKBOX" isRequired />
     <label for="confirmTOS">
             I agree to the terms and conditions
         </label>
@@ -160,7 +160,7 @@
       <div class="kform_spacer">
         <button type='submit' class='kform_submitBtn btn' id='kformSubmit' style="margin: 15px 8px 15px 0;" routerLink="/thankyou">COMPLETE CHECKOUT</button>
       </div>
-      <input type='hidden' name='orderItems' value=''>
+      <input type='hidden' name='orderItems' value='' />
     </div>
   </div>
 </form>

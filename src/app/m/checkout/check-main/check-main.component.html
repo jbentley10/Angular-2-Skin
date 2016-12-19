@@ -1,69 +1,320 @@
-<div class="main_cont_body">
-  <div class="main">
-    <div class="main_header">
-      <p><img src="../../../../assets/images/main_header_icon.png" width="33" height="20" alt="" title="" /> {{ randomGuests }} others are viewing this offer right now - <span id="time">05:00</span></p>
-    </div>
-    <!--  <h1 class="chek_discount_arrow"><img src="../../../../assets/images/chek_discount_arrow.png" height="22" width="22" alt="" title="" /> DISCOUNT ACTIVATED, SAVINGS APPLIED!</h1> -->
-    <p class="great_choice"><strong>Great Choice, <?php echo $customerName ; ?>!</strong> You're taking your first step towards a better skin. Act now so you don't miss out on this offer!</p>
-    <p class="low_stick"> Current Availability: <img src="../../../../assets/images/low_stick.png" height="19" width="63" alt="" title="" /><span>LOW STOCK.</span> Sell-out Risk: <strong>HIGH </strong> </p>
-    <div class="bolder_chk_checkout">
+<div class="cp-wrapper" id="wrapper">
 
-      <p>Your order is scheduled to arrive by <strong><script type="text/javascript">getDate(5)</script></strong></p>
-    </div>
-    <div class="hero_checkout">
-      <div class="hero_left"> <img class="chk_double_bottle" src="../../../../assets/images/product1.png" width="203" height="103" alt="" title="" /> </div>
-      <div class="hero_right">
-        <p><strong>{{ productName }}</strong> 30g - 30 Day Supply</p>
-        <ul>
-          <li class="price_chk"> <span>Price:</span>
-            <p id="pri">$ {{ checkPrice }}
-            </p>
-            <div class="clear"></div>
-          </li>
-          <li> <span>Shipping &amp; Handling:</span>
-            <p id="shipping">$ {{ shipping }}
-            </p>
-            <div class="clear"></div>
-          </li>
-          <li> <span>NEW TOTAL</span>
-            <p id="tot">$ {{ shipping }}
-            </p>
-            <div class="clear"></div>
-          </li>
-        </ul>
-        <img class="chk_port" src="../../../../assets/images/chk_port.jpg" width="337" height="68" alt="" title="" /> </div>
-      <!--    <div id='insureship'>
+  <div class="after" id="banner">
 
-                <div style="clear:both"></div>
-                <div class="ppimg"><img src="../../../../assets/images/protect-package-hover.png" alt="protect package" /></div>
-                <div class="protect-package" style="padding-left: 70px;">
+    <img class="logo" alt="logo" src="../../../../assets/images/m/logo.png">
 
+    <img alt="" src="../../../../assets/images/m/banner.jpg">
 
-
-                    <input type="checkbox" class="kformCheckoutUpsell" name="productId" productid="<?php echo $offer2->productId; ?>" value="<?php echo $offer2->productId; ?>" onchange="checkShip();" id="ship" checked>
-
-
-                    Yes, add Shipping Protection <em>(will be billed separately)</em> for $
-                    <?php echo $shipProtection_productPrice; ?> to my order.
-                        <br /> Add guaranteed shipping to your order. If a shipment is lost or stolen, a new order will be immediately sent free of charge.
-                        <div style="clear:both"></div>
-
-                </div>
-
-
-                <div style="clear:both"></div>
-
-            </div> -->
-      <img src="../../../../assets/images/chek_arrow.png" width="649" height="96" alt="" title="" />
-      <div class="clear"></div>
-    </div>
   </div>
-  <aside class="aside">
-    <div class="aside_head">
-      <h1>FINAL STEP</h1>
-      <h2>PAYMENT INFORMATION</h2>
+
+  <img alt="" id="steps-1" src="../../../../assets/images/m/steps-2.jpg">
+
+  <div id="approved">
+
+    <div id="approved-content">
+
+      <p class="bl f12"><span class="green">Congratulations <span [innerText]="echos.customerName"></span>!</span> Today, you’re taking your first step toward youthful skin.</p>
+
+      <p class="grey-2 f11"><span>Just pay a small shipping fee. Enjoy your expidited delivery!.</span>
+      </p>
+
+      <p class="gray f11">Current Availability: <span class="bl">LOW STOCK.</span> Sell-out Risk:<span class="red bl"> HIGH</span>
+      </p>
+
     </div>
-    <app-check-form></app-check-form>
-  </aside>
-  <div class="clear"></div>
-</div>
+
+  </div>
+
+  <div id="info-content">
+
+    <div ng-controller="ListCtrl" id="form-info" class="ng-scope">
+
+      <!-- ngRepeat: prodInfo in heading -->
+      <div ng-repeat="prodInfo in heading" class="fr ng-scope" id="price-info">
+
+        <div class="gray fl" id="prod-info">
+
+          <!-- ngRepeat: info in prodInfo.productContent -->
+          <div ng-repeat="info in prodInfo.productContent" class="prod-facts ng-scope">
+
+            <p class="bl uppercase f13 ng-binding">
+              <span [innerText]="echos.name"></span>
+            </p>
+
+            <p class="ng-binding">
+              <span [innerText]="echos.productName"></span>
+            </p>
+
+            <p class="ng-binding">30g - 30 Day Supply</p>
+
+          </div>
+          <!-- end ngRepeat: info in prodInfo.productContent -->
+
+        </div>
+
+        <div id="prices">
+
+          <div class="bl after">
+
+            <p class="green fr">$ 0.00
+            </p>
+
+            <p class="fl gray">Price:</p>
+
+          </div>
+
+          <div class="after gray">
+
+            <p class="fr"> $<span [innerText]="echos.shipping"></span>
+            </p>
+
+            <p class="fl">Shipping &amp; Handling:</p>
+
+          </div>
+
+          <div class="after gray">
+
+            <p class="fr">$<span [innerText]="echos.shipping"></span>
+            </p>
+
+            <p class="fl">Total:</p>
+
+          </div>
+
+        </div>
+
+      </div>
+      <!-- end ngRepeat: prodInfo in heading -->
+
+      <img id="bottle" class="fl" src="../../../../assets/images/m/product1.png">
+
+    </div>
+
+    <div id="submission-info">
+
+      <div id="form">
+
+        <div id="cards">
+
+          <img src="../../../../assets/images/m/cards.jpg">
+
+        </div>
+
+        <form id='kform' class='kform'>
+
+
+
+          <div id="shipping">
+            <div class='kform_spacer kform_checkbox'>
+              <input name='billShipSame' type='CHECKBOX' style="display: inline-block" (click)="this.toggleHiddenBilling()" [checked]="this.hideBilling">
+              <label for='billShipSame'>
+                Billing Address same as Shipping
+              </label>
+            </div>
+          </div>
+
+          <div id='kform_hiddenAddress' [hidden]="this.hideBilling">
+            <input type="text" id="street_number" name="shipAddress1" placeholder="Street Number" style="display: none" isRequired/>
+            <input type="text" id="route" name="shipAddress2" placeholder="Street Name" style="display: none" isRequired/>
+            <div id="locationField">
+              <input type="text" id="autocomplete" placeholder="Enter your address" onFocus="geolocate()" />
+            </div>
+
+            <div class='kform_spacer'>
+              <label>Address:</label>
+              <input name='address1' id="fullAddr" type='TEXT' isRequired />
+            </div>
+            <div class='kform_spacer'>
+              <label>City:</label>
+              <input name='city' id="locality" type='TEXT' isRequired />
+            </div>
+            <div class='kform_spacer'>
+              <label>State:</label>
+              <input type="text" name='state' id="administrative_area_level_1" isRequired />
+            </div>
+            <div class='kform_spacer'>
+              <label>Country:</label>
+              <input type="text" name='country' id="country" defaultText='country' />
+            </div>
+            <div class='kform_spacer'>
+              <label>Zip Code:</label>
+              <input name='postalCode' id="postal_code" type='TEXT' isRequired />
+            </div>
+          </div>
+
+
+          <div>
+
+
+
+            <label>Select Card Type: </label>
+
+
+
+            <select style="height: 25px;">
+
+
+
+              <option value="">Card Type</option>
+
+
+
+
+
+              <option value="visa">Visa</option>
+
+
+
+
+
+              <option value="master">Master Card</option>
+
+
+
+
+
+            </select>
+
+
+
+          </div>
+          <input type="hidden" name='paySource' value="CREDITCARD">
+
+          <div style='display:none'>
+            <div id='kformPaySourceWrap' inputType='radio'></div>
+            <div class='kform_spacer' id='kformNewPaymentType'>
+              <input type='checkbox' name='newPaymentType'>
+              <span>
+                New Credit Card
+              </span>
+            </div>
+          </div>
+
+          <div>
+
+            <label>Credit Card Number:</label>
+
+
+
+
+
+            <input type="tel" isRequired name="cardNumber" maxlength="16" style="height: 25px;">
+
+          </div>
+
+          <div>
+
+            <label>Expiry Date:</label>
+
+            <select name='cardMonth' style='width: 35%;height: 25px;' isRequired>
+              <option value='01'>01 (Jan)</option>
+              <option value='02'>02 (Feb)</option>
+              <option value='03'>03 (Mar)</option>
+              <option value='04'>04 (Apr)</option>
+              <option value='05'>05 (May)</option>
+              <option value='06'>06 (Jun)</option>
+              <option value='07'>07 (Jul)</option>
+              <option value='08'>08 (Aug)</option>
+              <option value='09'>09 (Sep)</option>
+              <option value='10'>10 (Oct)</option>
+              <option value='11'>11 (Nov)</option>
+              <option value='12'>12 (Dec)</option>
+            </select>
+            <select name='cardYear' style='width: 35%;height: 25px;' isRequired>
+              <option value='2016'>2016</option>
+              <option value='2017'>2017</option>
+              <option value='2018'>2018</option>
+              <option value='2019'>2019</option>
+              <option value='2020'>2020</option>
+              <option value='2021'>2021</option>
+              <option value='2022'>2022</option>
+              <option value='2023'>2023</option>
+              <option value='2024'>2024</option>
+              <option value='2025'>2025</option>
+              <option value='2026'>2026</option>
+              <option value='2027'>2027</option>
+            </select>
+
+          </div>
+
+          <div>
+
+            <div class="w50 fl">
+
+              <label>CVV:</label>
+
+              <input type="tel" name="cardSecurityCode" maxlength=4>
+            </div>
+
+            <div class="w50 fr">
+
+              <img id="cvv-img" alt="" src="../../../../assets/images/m/cvv-img.jpg">
+
+            </div>
+
+            <div class="clear"></div>
+
+          </div>
+
+
+
+
+
+
+
+          <div id="cp-1-purple-bottom">
+
+            <div class="after gray" id="security-tag">
+
+              <p style="color: #fff"><img alt="" src="../../../../assets/images/m/lock-gray.jpg"> Secure 256 Bit Encrypted Connection.</p>
+
+            </div>
+
+            <div class="kform_spacer kform_checkbox" style="display:none;">
+              <input name="confirmTOS" type="CHECKBOX" isRequired>
+              <label for="confirmTOS">
+              I agree to the terms and conditions
+            </label>
+            </div>
+            <input type="submit" value='COMPLETE CHECKOUT' class='kform_submitBtn' routerLink="/thankyou" id='kformSubmit'>
+
+
+
+            <img id="security" alt="" src="../../../../assets/images/m/secure.jpg">
+
+          </div>
+
+          <input type='hidden' name='orderItems' value=''>
+        </form>
+
+      </div>
+
+      <!-- <div id="btm">
+
+
+
+        <!-- ngInclude: 'ngIncludes/footer.html' -->
+      <!-- <footer ng-include="'ngIncludes/footer.html'" class="f11 ng-scope">
+        <p>
+          <a href="javascript:void(0);" onclick="javascript:openNewWindow('page-terms.php' , 'modal');">Terms |</a>
+          <a href="javascript:void(0);" onclick="javascript:openNewWindow('page-privacy.php' , 'modal');">Privacy Policy |</a>
+          <a href="javascript:void(0);" onclick="javascript:openNewWindow('page-contact.php' , 'modal');">Contact Us </a>
+
+        </p>
+        <p class="uppercase ng-scope">
+          {{ date }} &copy; {{ productName }}
+        </p>
+      </footer> -->
+
+      <!-- ngInclude: 'ngIncludes/terms.html' -->
+      <!-- <div ng-include="'ngIncludes/terms.html'" id="terms" class="ng-scope"> -->
+      <!--
+        <p>By placing an order, you will pay S & H to receive a 30 day supply. You will also be automatically enrolled in our membership program. The program will charge you $92.53 on the 14th day of your order date for a monthly supply and every 30 days thereafter until you cancel. You can cancel at any time by calling 8889897434. If you cancel before the 14th day of your order date, you pay the S&H of your 30 day supply. If you cancel after the 14th day of your order date, you shall pay for the 30 day supply plus any future supplies without refund.
+      </p>
+
+      </div>
+
+    </div> -->
+
+    </div>

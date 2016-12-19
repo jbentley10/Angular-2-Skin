@@ -10,6 +10,10 @@ import { MainInfoComponent } from './d/lander/main-info/main-info.component';
 import { MainFormComponent } from './d/lander/main-form/main-form.component';
 import { Cs1Component } from './d/lander/cs-1/cs-1.component';
 import { Cs2Component } from './d/lander/cs-2/cs-2.component';
+import { Cs3Component } from './d/lander/cs-3/cs-3.component';
+import { Cs4Component } from './d/lander/cs-4/cs-4.component';
+import { Cs5Component } from './d/lander/cs-5/cs-5.component';
+import { Cs6Component } from './d/lander/cs-6/cs-6.component';
 
 // Checkout Page
 import { CheckoutComponent } from './d/checkout/checkout.component';
@@ -38,10 +42,6 @@ import { routing } from './app.routing';
 
 // Global Variables
 import { GlobalDirective } from './global.directive';
-import { Cs3Component } from './d/lander/cs-3/cs-3.component';
-import { Cs4Component } from './d/lander/cs-4/cs-4.component';
-import { Cs5Component } from './d/lander/cs-5/cs-5.component';
-import { Cs6Component } from './d/lander/cs-6/cs-6.component';
 import { CheckFooterComponent } from './d/checkout/check-footer/check-footer.component';
 
 

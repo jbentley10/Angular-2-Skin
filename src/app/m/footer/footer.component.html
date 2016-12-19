@@ -1,50 +1,19 @@
-<!-- Footer -->
-<footer class="footer-basic-centered">
-
-  <!-- NEW SHIT -->
-  <div class="footer-txt">
-    <div class="container">
-      <div class="foot-cont">
-        <p>This product has not been evaluated by the FDA. This product is not intended to diagnose, treat, cure or prevent any disease. Results in description are illustrative and may not be typical results and individual results may vary. The depictions
-          on this page are fictitious and indicative of potential results. Representations regarding the efficacy and safety of {{ footerName }} have not been scientifically substantiated or evaluated by the Food and Drug Administration.
-        </p>
-      </div>
-      <div class="foot-cont-2">
-        <p>
-          <a class="footer-link" (click)="modal.show('contact')">Contact Us</a> |
-          <a class="footer-link" (click)="modal.show('terms')">Terms and Conditions</a> |
-          <a class="footer-link" (click)="modal.show('privacy')">Privacy Policy </a>
-        </p>
-        <p>2016 &copy; {{ name }}
-        </p>
-      </div>
-      <div class="clear"></div>
+<footer>
+  <div id="cta">
+    <div id="security-tag" class="after gray">
+      <p><img src="../../../assets/images/m/lock-gray.jpg" alt="" /> Secure 256 Bit Encrypted Connection.</p>
     </div>
+    <input type="submit" id="sub-cp" routerLink="/shipping" style="background: url(../../../assets/images/m/lp-off-btn.png) no-repeat; background-size: cover" />
+    <input type="hidden" name="sub" value="1" />
   </div>
+  <p>
+    <a class="footer-link" (click)="modal.show('terms')">Terms |</a>
+    <a class="footer-link" (click)="modal.show('privacy')">Privacy Policy |</a>
+    <a class="footer-link" (click)="modal.show('contact')">Contact Us </a>
 
-  <!-- OLD SHIT
-  <div class="footer-company-motto">
-    <p [innerText]="echos.corpName"></p>
-    <p [innerText]="echos.corpAddress"></p>
-    <p [innerText]="echos.phone"></p>
-    <p [innerText]="echos.email"></p>
-  </div>
-
-  <p class="footer-links">
-    <a class="footer-link" (click)="modal.show('terms')">Terms and Conditions</a> &bull;
-    <a class="footer-link" (click)="modal.show('privacy')">Privacy Policy</a> &bull;
-    <a class="footer-link" (click)="modal.show('contact')">Contact Us</a> &bull;
-    <a class="footer-link" (click)="modal.show('ingredients')">Ingredients</a>
   </p>
-
-  <p class="footer-company-name"><span [innerText]="echos.productName"></span> &copy; 2016</p>
-  <br />
-  <p class="footer-company-name">This product is not for use by or sale to persons under the age of 18. This product should be used only as directed on the label. It should not be used if you are pregnant or nursing. Consult with a physician before use if you have a serious medical
-    condition or use prescription medications. A Doctor's advice should be sought before using this and any supplemental dietary product. All trademarks and copyrights are the property of their respective owners and are not affiliated with nor do they
-    endorse <span [innerText]="echos.productName"></span>. These statements have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure or prevent any disease. Individual weight loss results will vary. By using this site
-    you agree to follow the Privacy Policy and all Terms & Conditions printed on this site. Void Where Prohibited By Law.
+  <p class="copyright">2016 &copy; <span [innerText]="echos.name"></span>
   </p>
--->
-
-  <app-modal></app-modal>
+  <p class="disclaimer" style="padding-bottom:30px; margin-bottom: 85px;">This product has not been evaluated by the FDA. This product is not intended to diagnose, treat, cure or prevent any disease. Results in description are illustrative and may not be typical results and individual results may vary. The depictions on this
+    page are fictitious and indicative of potential results. Representations regarding the efficacy and safety of <span [innerText]="echos.name"></span> have not been scientifically substantiated or evaluated by the Food and Drug Administration.</p>
 </footer>

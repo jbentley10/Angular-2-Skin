@@ -58,7 +58,7 @@ h6 {
 }
 
 div {
-    display: block;
+    /*display: block;*/
 }
 
 .container {
@@ -916,7 +916,7 @@ div {
     font-family: "Open Sans", Arial;
     position: absolute;
     right: 1px;
-    top: 61px;
+    top: 4px;
     width: 311px;
     z-index: 10;
 }
@@ -973,23 +973,23 @@ div {
 }
 
 form {
-    text-align: right;
+    text-align: left;
     font-size: 12px;
-    padding: 34px 18px 0 0;
+    padding: 40px 18px 0 0;
 }
 
 input[type="text"] {
     height: 27px;
-    width: 145px;
+    width: 100%;
     margin-left: 8px;
-    margin-right: 8px;
+    margin-right: 5px;
     text-indent: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
 }
 
 #form form select {
-    width: 185px;
+    width: 120px;
     height: 26px;
     margin-right: 5px;
     margin-left: 9px;

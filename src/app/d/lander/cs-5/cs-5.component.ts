@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GlobalDirective } from '../../../global.directive';
 
 @Component({
   selector: 'app-cs-5',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Cs5Component implements OnInit {
 
-  constructor() { }
+  constructor (public echos: GlobalDirective) {}
 
   ngOnInit() {
   }

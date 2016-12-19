@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Title }     from '@angular/platform-browser';
-import { LanderComponent } from './d/lander/lander.component';
-import { FooterComponent } from './d/footer/footer.component';
+import { LanderComponent } from './m/lander/lander.component';
+import { FooterComponent } from './m/footer/footer.component';
 import { GlobalDirective } from './global.directive';
 
 @Component({

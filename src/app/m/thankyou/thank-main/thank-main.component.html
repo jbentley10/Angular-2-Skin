@@ -1,123 +1,110 @@
-<body class="thankyou_body">
-  <div style="display:none">
-    <?php
-//pull the order information out of session
-$orderId = $ksdk->getOrderId();
-$customerName = $ksdk->getCustomerName();
-$billingAddress = $ksdk->getBillingAddress();
-$shippingAddress = $ksdk->getShippingAddress();
-$phoneNumber = $ksdk->getPhoneNumber();
-$emailAddress = $ksdk->getEmailAddress();
-$itemsTable = $ksdk->getItemsTable();
-$subTotal = $ksdk->getSubTotal();
-$shipTotal = $ksdk->getShipTotal();
-$taxTotal = $ksdk->getTaxTotal();
-$insuranceTotal = $ksdk->getInsureTotal();
-$discountTotal = $ksdk->getDiscountTotal();
-$orderTotal = $ksdk->getOrderTotal();
-$currency = $ksdk->currencySymbol;
-?>
+<div class="cp-wrapper" id="wrapper">
+  <div class="after" id="banner">
+    <img class="logo" alt="logo" src="../../../../assets/images/m/logo.png">
+    <img alt="" src="../../../../assets/images/m/banner.jpg">
   </div>
-  <div class="container_thankyou">
-    <div class="thankyou_cont">
-      <header class="thankyou_header"> <img class="thankyou_header_left" src="../../../../assets/images/logo.png" width="200" height="auto" alt="" title="" /> <img class="thankyou_header_right" src="../../../../assets/images/header_ship2.png" width="401" height="41" alt="" title="" />
-        <div class="clear"></div>
-      </header>
-      <div class="section1">
-        <h1>THANK YOU FOR YOUR PURCHASE</h1>
-        <span>We hope you enjoy the benefits of <?php echo $productName; ?></span>
-        <p>Your order is scheduled to arrive by <strong><script type="text/javascript">getDate(5)</script></strong></p>
+  <img id="steps-img" class="" alt="" src="../../../../assets/images/m/steps.jpg">
+
+  <div id="info-content">
+    <h3 style="    font-size: 12px;
+text-align: center;">
+Thank you <span [innerText]="echos.customerName"></span>!<br>
+ORDER#: <span [innerText]="echos.orderId"></span>
+</h3>
 
 
-        <div class="kthanks" style="">
+    <div class="kthanks_box" style="">
+      <div class="kthanks_boxTitle">
+        Items Ordered
+      </div>
+      <div class="kthanks_boxContent">
 
+        <span [innerText]="echos.itemsTable"></span>
 
-
-
-          <div class="kthanks_box" style="">
-            <div class="kthanks_boxTitle">
-              Items Ordered
+        <hr />
+        <div style="float:right">
+          <div class="kthanks_spacer">
+            <div class="kthanks_label">
+              SubTotal:
             </div>
-            <div class="kthanks_boxContent">
-
-
-              <hr />
-              <div style="float:right">
-                <div class="kthanks_spacer">
-                  <div class="kthanks_label">
-                    SubTotal:
-                  </div>
-                </div>
-                <div class="kthanks_spacer">
-                  <div class="kthanks_label">
-                    S &amp; H:
-                  </div>
-                </div>
-                <div class="kthanks_spacer">
-                  <div class="kthanks_label">
-                    Tax:
-                  </div>
-                </div>
-                <div class="kthanks_spacer">
-                  <div class="kthanks_label">
-                    Insurance:
-                  </div>
-                </div>
-                <div class="kthanks_spacer" style="color:green">
-                  <div class="kthanks_label">
-                    Discount:
-                  </div>
-                </div>
-                <div class="kthanks_spacer" style="border-top:1px solid #CCC">
-                  <div class="kthanks_label">
-                    Grand Total:
-                  </div>
-                </div>
-              </div>
-              <div style="clear:both"></div>
+            <span [innerText]="echos.subTotal"></span>
+          </div>
+          <div class="kthanks_spacer">
+            <div class="kthanks_label">
+              S &amp; H:
             </div>
+            <span [innerText]="echos.shipTotal"></span>
           </div>
 
-
-          <div style="">
-
-            <div class="kthanks_box">
-              <div class="kthanks_boxTitle">
-                Billing Information
-              </div>
-              <div class="kthanks_boxContent">
-                {{ billingAddress }}<br /> {{ email }}<br /> {{ phone }}<br />
-              </div>
+          <div class="kthanks_spacer">
+            <div class="kthanks_label">
+              Tax:
             </div>
-
-            <div class="kthanks_box">
-              <div class="kthanks_boxTitle">
-                Shipping Information
-              </div>
-
-              <div class="kthanks_boxContent">
-                {{ shippingAddress }}
-              </div>
-
+            <span [innerText]="echos.taxTotal"></span>
+          </div>
+          <div class="kthanks_spacer">
+            <div class="kthanks_label">
+              Insurance:
             </div>
+            <span [innerText]="echos.insuranceTotal"></span> </div>
+
+              <div class="kthanks_spacer" style="color:green">
+                <div class="kthanks_label">
+                  Discount:
+                </div>
+                <span [innerText]="echos.discountTotal"></span>
+              </div>
+              <div class="kthanks_spacer" style="border-top:1px solid #CCC">
+                <div class="kthanks_label">
+                  Grand Total:
+                </div>
+                <span [innerText]="echos.orderTotal"></span>
+              </div>
           </div>
           <div style="clear:both"></div>
-
-          <p>*A confirmation email has been sent to {{ email }} </p>
-
         </div>
-
-
       </div>
 
-      <p>By submitting, you consent to having read and agreed to our Terms & Conditions and after your day trial period has expired, being enrolled in our membership program is $ {{ trialPrice }} plus shipping per month. You can cancel any time by calling
-        <?php echo $phone; ?>
-        <br>
-        <p>*A confirmation email has been sent to {{ email }}
-        </p>
 
+      <div style="width:100%">
+
+        <div class="kthanks_box">
+          <div class="kthanks_boxTitle">
+            Billing Information
+          </div>
+          <div class="kthanks_boxContent">
+            <span [innerText]="echos.billingAddress"></span><br /> <span [innerText]="echos.emailAddress"></span><br /> <span [innerText]="echos.phone"></span><br />
+          </div>
+        </div>
+
+        <div class="kthanks_box">
+          <div class="kthanks_boxTitle">
+            Shipping Information
+          </div>
+
+          <div class="kthanks_boxContent">
+            <span [innerText]="echos.shippingAddress"></span>
+          </div>
+
+        </div>
+      </div>
+      <div style="clear:both"></div>
+
+      <p style="font-size: 12px;">*A confirmation email has been sent to <span [innerText]="echos.emailAddress"></span> </p>
+      <p>&nbsp;</p>
+    </div>
+    <div class="cl" id="btm">
+      <!-- ngInclude: 'ngIncludes/footer.html' -->
+      <footer ng-include="'ngIncludes/footer.html'" class="f11 ng-scope">
+        <p>
+          <a href="javascript:void(0);" onclick="javascript:openNewWindow('page-terms.php' , 'modal');">Terms |</a>
+          <a href="javascript:void(0);" onclick="javascript:openNewWindow('page-privacy.php' , 'modal');">Privacy Policy |</a>
+          <a href="javascript:void(0);" onclick="javascript:openNewWindow('page-contact.php' , 'modal');">Contact Us </a>
+
+        </p>
+        <p class="uppercase ng-scope">
+          <span [innerText]="echos.date"></span> &copy;
+          <<span [innerText]="echos.productName"></span> </p>
+      </footer>
     </div>
   </div>
-  <script src="assets/js/main.js" type="text/javascript"></script>
-  <script src="assets/js/exitpop.js" type="text/javascript"></script>
-</body>

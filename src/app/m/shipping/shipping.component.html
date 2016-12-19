@@ -1,0 +1,121 @@
+<div id="wrapper" class="cp-wrapper">
+  <div id="banner" class="after">
+    <img src="../../../assets/images/m/logo.png" alt="logo" width="126" class="logo" />
+    <img src="../../../assets/images/m/banner.jpg" width="320" height="55" alt="" />
+  </div>
+  <!-- <div id="hidden-banner">
+    <p><img src="images/eye.png" alt="" id="eye" class="fl"/> 13 Others are viewing this offer right now</p>
+</div> -->
+  <img src="../../../assets/images/m/steps-1.jpg" width="320" height="54" alt="" id="steps-2" class="" />
+  <div id="approved">
+    <div id="approved-content">
+      <h1>VERIFY YOUR SHIPPING INFO</h1>
+      <p>Please submit shipping details for guaranteed delivery. Your order is almost complete.</p>
+    </div>
+  </div>
+  <div id="form">
+    <form id='kform' class='kform'>
+      <div class="fl w50">
+        <label>First Name:</label>
+        <input type="text" name="firstName" placeholder="First Name" isRequired />
+      </div>
+      <div class="fr w50">
+        <label>Last Name:</label>
+        <input type="text" name="lastName" placeholder="Last Name" isRequired />
+      </div>
+      <div style="clear:both;"></div>
+
+      <!-- Google Form -->
+      <div id="locationField">
+        <input type="text" id="autocomplete" placeholder="Enter your address" onFocus="geolocate()" />
+      </div>
+
+      <!-- Google's Example -->
+      <!-- <table id="address">
+        <tr>
+          <td class="label">Street address</td>
+          <td class="slimField"><input class="field" id="street_number" disabled="true" />
+          </td>
+          <td class="wideField" colspan="2"><input class="field" id="route" disabled="true" />
+          </td>
+        </tr>
+        <tr>
+          <td class="label">City</td>
+          <!-- Note: Selection of address components in this example is typical.
+             You may need to adjust it for the locations relevant to your app. See
+             https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-addressform
+      <td class="wideField" colspan="3"><input class="field" id="locality" disabled="true" />
+      </td>
+      </tr>
+      <tr>
+        <td class="label">State</td>
+        <td class="slimField"><input class="field" id="administrative_area_level_1" disabled="true" />
+        </td>
+        <td class="label">Zip code</td>
+        <td class="wideField"><input class="field" id="postal_code" disabled="true" />
+        </td>
+      </tr>
+      <tr>
+        <td class="label">Country</td>
+        <td class="wideField" colspan="3"><input class="field" id="country" disabled="true" />
+        </td>
+      </tr>
+      </table> -->
+      <input type="text" id="street_number" name="shipAddress1" placeholder="Street Number" style="display: none" isRequired/>
+      <input type="text" id="route" name="shipAddress2" placeholder="Street Name" style="display: none" isRequired/>
+
+      <div>
+        <label>Address:</label>
+        <input type="text" id="fullAddr" name="shipAddress1" placeholder="Address" isRequired/>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="w50 fl">
+        <label>Zip Code:</label>
+        <input type="text" id="postal_code" name="shipPostalCode" placeholder="Zip Code" isRequired maxlength="5" />
+      </div>
+
+      <div class="w50 fl">
+        <label>Country: </label>
+        <input type="text" name='shipCountry' id="country" name="shipCountry" placeholder="Country" style="margin-left: 13px" />
+      </div>
+      <div style="clear:both;"></div>
+      <div>
+        <label>City:</label>
+        <input type="text" name="shipCity" id="locality" placeholder="Your City" isRequired />
+      </div>
+      <div style="clear:both;"></div>
+
+      <div class="w50 fl" style="height: 30px; margin-bottom: 21px;">
+        <label>State:</label>
+        <input type="text" name='shipState' id="administrative_area_level_1" isRequired />
+      </div>
+
+      <div class="w50 fr" style="height:30px">
+        <label>Phone:</label>
+        <input type="text" name="phoneNumber" placeholder="Phone" maxlength="10" isRequired/>
+      </div>
+
+      <div>
+        <div class="clear"></div>
+        <label>E-mail</label>
+        <input type="text" name="emailAddress" id="emailAddress" placeholder="Email Address" isRequired/>
+      </div>
+      <div id="cp-1-purple-bottom">
+        <div id="security-tag" class="after gray">
+          <p style="color: #fff"><img src="../../../assets/images/m/lock-gray.jpg" width="12" height="14" alt="" /> Secure 256 Bit Encrypted Connection.</p>
+        </div>
+        <input type="submit" id='kformSubmit' routerLink="/checkout" value='Rush My Order!' />
+        <img src="../../../assets/images/m/secure.jpg" width="170" height="43" alt="" id="security" />
+        <div id="btm">
+          <footer ng-include="'ngIncludes/footer.html'" class="f11 ng-scope">
+            <p>
+              <a style="color: #fff" href="javascript:void(0);" onclick="javascript:openNewWindow('page-terms.php' , 'modal');">Terms |</a>
+              <a style="color: #fff" href="javascript:void(0);" onclick="javascript:openNewWindow('page-privacy.php' , 'modal');">Privacy Policy |</a>
+              <a style="color: #fff" href="javascript:void(0);" onclick="javascript:openNewWindow('page-contact.php' , 'modal');">Contact Us </a>
+            </p>
+          </footer>
+        </div>
+      </div>
+
+    </form>
+  </div>
