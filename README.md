@@ -1,7 +1,9 @@
-# Angular2DemoServer
+# Angular2Skin
 
 **To Begin**
+   * Run 'npm rebuild'
    * Run 'sudo npm install -g angular-cli'
+   * To see your changes live (as well as the project itself), run 'ng serve'
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.21.
 
